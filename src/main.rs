@@ -98,7 +98,7 @@ fn main() {
             .expect("Failed to read input");
         let country_code = country_code.trim();
 
-        let api_key = "d3989214ea4e827ae0d08caf503857ad";
+        let api_key = "open_weather_map_api_key";
         match get_weather_info(&city, &country_code, api_key) {
             Ok(response) => {
                 display_weather_info(&response);
